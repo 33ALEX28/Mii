@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Million Dollar Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #fff;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(100, 10px);
+      grid-gap: 0;
+      width: 1000px;
+      height: 1000px;
+    }
+    .grid div {
+      width: 10px;
+      height: 10px;
+      box-sizing: border-box;
+    }
+    .ad {
+      background-color: red; /* Placeholder for ads */
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <!-- Example of ad blocks -->
+    <div class="ad" onclick="window.open('https://example.com', '_blank');" style="grid-column: 1 / 2; grid-row: 1 / 2;"></div>
+    <div class="ad" onclick="window.open('https://anotherexample.com', '_blank');" style="grid-column: 2 / 3; grid-row: 1 / 2;"></div>
+    <!-- Repeat for more ads -->
+  </div>
+</body>
+</html>
